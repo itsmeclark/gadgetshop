@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>GadgetShop</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><button id="homeBtn">Home</button></a>
+        <a href="shop.html"><button id="shopBtn">Shop</button></a>
+        <a href="../aboutUs/about.html"><button>About</button></a>
+    </header>
+    <div class="container">
+        <div id="highLight">
+            <strong>NEW</strong>
+        </div>
+        <div id="newItem">
+            <img src="../shopPage/laptopRazor.png">
+            <div class="product-info"><p>Razer Blade 16<br>PHP.166,999</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('166999')" class="checkButton">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="ROG-hone-5.png">
+            <div class="product-info"><p>ROG PHONE 5<br>PHP.39,995</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('39995')" class="checkButton">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="12promax.jpg">
+            <div class="product-info"><p>iPhone 12 pro max<br>PHP.24,885</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('24885')" class="checkButton">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="samsung.jpg">
+            <div class="product-info"><p>Samsung Galaxy S23 <br>PHP.68,990</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('68990')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="redmagic.jpg">
+            <div class="product-info"><p>Red Magic 9 Pro<br>PHP.24,999</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('24999')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="macbook.jpg">
+            <div class="product-info"><p>Macbook 16 M3 Pro<br>PHP.159,990</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('159990')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="ipadpro6.jpg">
+            <div class="product-info"><p>iPad pro(6th Gen.)<br>PHP.75,990</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('75990')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="tecnoPova.jpg">
+            <div class="product-info"><p>Tecno Pova 5 Pro 5G<br>PHP.8,999</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('8999')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="infinixNote30.jpg">
+            <div class="product-info"><p>Infinix Note 30 5G<br>PHP.9,999</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('9999')">BUY NOW</button></div>
+        </div>
+        <div class="products">
+            <img src="nothingPhone2.jpg">
+            <div class="product-info"><p>Nothing Phone 2<br>PHP.38,990</p></div>
+            <div class="product-button"><button onclick="displayCheckOut('38990')">BUY NOW</button></div>
+        </div>
+    </div>
+<div id="checkOutBtn">
+  <div id="removeContent">
+            <h1>CHECK OUT</h1>
+            <p class="deliveryAddress">Delivery Address</p>
+            <label class="name">Name:</label><br>
+            <input type="text" class="name"><br>
+            <label class="contact">Contact no#:</label><br>
+            <input type="text" class="contact" maxlength="11"><br>
+            <label class="country">Country:</label><br>
+            <input type="text" class="country"><br>
+            <label class="zipcode">ZIP Code:</label><br>
+            <input type="text" class="zipcode"><br>
+            <label class="brgy">Barangay:</label><br>
+            <input type="text" class="brgy"><br>
+            <label class="paymentMethod">Payment Method:</label><br>
+            <input type="text" class="paymentMethod"><br>
+            <p class="paymentDetails">Payment Details</p>
+        <div class="payment">
+            <p>Merchandise Total</p>
+            <p>Shippiing Fee</p>
+            <p>Shippiing Discount</p>
+            <p>Voucher Discount</p><br>
+        </div>
+        <div id="totalDetails">
+            <p id="itemCost">166,999</p>
+            <p id="shippingFee">50</p>
+            <p id="shippingDiscount">30</p>
+            <p id="Voucher Discount">5,000</p>
+        </div>
+        <p class="total">Total</p>
+        <p id="totalPayment">162,019</p>
+        <button class="placeOrder">Place Order</button>
+    </div>
+    <button id="close" onclick="closeCheck()">X</button>
+</div>
+<div id="checkOutContainer">
+    
+</div>
+<video id="checkVideo">
+    <source src="bideo.mp4">
+</video>
+<h2 id="itemPurchase">ITEM PURCHASED</h2>
+<script src="shop.js"></script>
+</body>
+</html>

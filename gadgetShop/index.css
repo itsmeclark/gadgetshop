@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+header {
+    background-color: black;
+    height: 100px;
+
+}
+header button {
+    color: white;
+    text-decoration: none;
+    border: solid 1px transparent;
+    background-color: black;
+    width: 80px;
+    height: 48px;
+    margin: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 500px;
+}
+header button:hover {
+    color: #15f5ba;
+    border-bottom: solid 4px #15f5ba;
+    width: 80px;
+    height: 48px;
+    margin: 40px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+}
+.slideImg {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    right: 100px;
+    top: 125px;
+    animation: 1.5s slideImg ease;
+    cursor: pointer;
+}
+
+@keyframes slideImg{
+    from{
+        transform: translateX(300%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+.slideImg:hover {
+    transform: scale(1.1);
+}
+
+#caption {
+    font-size: 60px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+#shopBtn {
+    border: solid 1px #15f5ba;
+    background-color: #15f5ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    left: 150px;
+    top: 160px;
+    cursor: pointer;
+}
+#shopBtn:hover {
+    transform: scale(1.1);
+}
+#homeBtn {
+    color: #15f5ba;
+    border-bottom: solid 4px #15f5ba;
+    width: 80px;
+    height: 48px;
+    margin: 40px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+}
